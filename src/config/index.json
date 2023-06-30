@@ -1,0 +1,87 @@
+{
+    "company": {
+      "name": "Натяжные потолки Иркутск",
+      "logo": "/img/logo-crop.png"
+    },
+    "navigation": 
+      {
+        "header1": "Натяжные потолки",
+        "header2": "Пятый элемент уюта",
+        "img": "src/assets/img/bg-img-main.jpg",
+        "alt": "picture"
+      },
+
+      "banner-left": 
+      {
+        "img": "src/assets/img/gift-icon.svg",
+        "text": "Точечный светильник в подарок за каждые 2 метра потолка"
+      },
+
+      "banner-center": 
+      {
+        "img": "Изображение кухни",
+        "text": "Матовый потолок для кухни 20 кв.v",
+        "price": "14 500 рублей"
+      },
+
+      "banner-right": 
+      {
+        "head": "Звоните",
+        "phone": "8(495)762-94-68",
+        "text": "C 9-00 lj 21-00 АН-ВС"
+      },
+
+
+    "promo-section": {
+      "text": "закажите натяжной потолок -- получите второй в подарок! БЕсплатно",
+      "text-small": "Dct подробности по телефон 8 (495) 762-94-68",
+      "text-promo": "До конца акуции осталось"
+    },
+
+    "work-section": {
+        "header-text": "Как мы работаем",
+        "first-text": "Оставляете заявку на выезд замещика",
+        "second-text": "Выезд мастера в дженьт поджачи заявки",
+        "third-text": "gjkgbcsdftv ljujdjh - вы вносите 10 % оплаты",
+        "fourth-text": " Демсострирем каталоги и снимаем замеры",
+        "fifth-text": "Монтируем потолок (2-3 часа)"
+      },
+
+      "why-us-section": {
+        "header-text": "Почему му?",
+        "first-text": "7 лет успешной работы",
+        "second-text": "СМонтаж 2-3 часа",
+        "third-text": "Гарантия 15 лет на материал ",
+        "fourth-text": "Уборка после монтажа",
+        "fifth-text": "Предоплата всего 20%"
+      },
+
+      "input-section": {
+        "first-text": "Ваш адрес",
+        "second-text": "Ваш телефон",
+        "button-text": "Вызвать замерщика"
+      },
+
+      "calculate-section": {
+        "header-text": "Рассчитать стоимость потолка",
+        "first-text": "Классический ",
+        "second-text": "Многоуровневый",
+        "third-text": "Звездный",
+        "fourth-text": "Комбинированный",
+        "total-text": "Примерная стоимость"
+      },
+
+      "feedback-section": {
+        "header-text": "Отзывы",
+        "feedback-text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sapien dui, gravida quis purus a, convallis vulputate massa. In ut bibendum quam. Nam varius ipsum quis elit faucibus posuere. Fusce sagittis cursus mauris, et gravida orci pretium sed. Donec eu velit vel mi dignissim cursus fermentum tincidunt arcu. Vestibulum malesuada vel ligula a tristique. Suspendisse auctor aliquam ultrices. Duis sagittis malesuada tortor ac porttitor. Praesent gravida turpis vel egestas efficitur. Curabitur et nibh non libero luctus pharetra. Praesent posuere lectus ac quam tincidunt, sit amet tristique metus dapibus.",
+        "name-text": "Елена К.",
+        "address-text": "Москва, Печатники улица Полбина, д. 49"
+      },
+
+      "footer-section": {
+        "header-text": "Создать уют в доме просто, как позвонить",
+        "phone": "8(495)762-94-68"
+      }
+  
+
+    }

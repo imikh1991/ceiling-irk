@@ -1,0 +1,42 @@
+.header {
+    position: relative;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 30px 0px;
+    font-size: 50px;
+    line-height: normal;
+    min-height: 324px;
+    
+  
+    @media (max-width: 830px) {
+      font-size: 35px;
+    }
+    
+    @media (max-width: 555px) {
+      padding: 45px 0px 20px;
+      font-size: 22px;
+      gap: 10px;
+    }
+  }
+  
+  .title {
+    width: 347px;
+    font-size: inherit;
+    width: min-content;
+    color: $color-main;
+  }
+  
+  .pageTitle {
+    align-self: flex-end;
+    color: $color-active;
+    font-weight: bold;
+  }
+
+  .img {
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
