@@ -11,17 +11,19 @@
         "alt": "picture"
       },
 
-      "banner-left": 
+      "bannerLeft": 
       {
         "img": "src/assets/img/gift-icon.svg",
-        "text": "Точечный светильник в подарок за каждые 2 метра потолка"
+        "text": "Точечный светильник в подарок за каждые 2 метра потолка",
+        "alt": "picture"
       },
 
-      "banner-center": 
+      "centerSlider": 
       {
-        "img": "Изображение кухни",
+        "img": "src/assets/img/slider.png",
         "text": "Матовый потолок для кухни 20 кв.v",
-        "price": "14 500 рублей"
+        "price": "14 500 рублей",
+        "alt": "slider"
       },
 
       "banner-right": 
