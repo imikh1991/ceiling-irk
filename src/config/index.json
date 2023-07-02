@@ -18,35 +18,85 @@
         "alt": "picture"
       },
 
-      "centerSlider": 
-      {
-        "img": "src/assets/img/slider.png",
-        "text": "Матовый потолок для кухни 20 кв.v",
-        "price": "14 500 рублей",
-        "alt": "slider"
+      "swiperSlides": {
+        "title": "Swiper",
+        "items": [
+          {
+            "title": "Комната красивая номер один ",
+            "description": "Наш новый потолок 10 кв.м",
+            "img": "src/assets/img/swiper/swiper1.jpg",
+            "alt": "swiper1"
+          },
+          {
+            "title": "Комната красивая номер два ",
+            "description": "Наш второй новый потолок 20 кв.м",
+            "img": "src/assets/img/swiper/swiper2.jpg",
+            "alt": "swiper2"
+          },
+          {
+            "title": "Комната красивая номер три ",
+            "description": "Наш третий новый потолок 30 кв.м",
+            "img": "src/assets/img/swiper/swiper3.jpg",
+            "alt": "swiper3"
+          },
+          {
+            "title": "Комната красивая номер четыре ",
+            "description": "Наш четвертый новый потолок 40 кв.м",
+            "img": "src/assets/img/swiper/swiper4.jpg",
+            "alt": "swiper4"
+          }
+        ]
       },
 
-      "banner-right": 
+      "bannerRight": 
       {
         "head": "Звоните",
         "phone": "8(495)762-94-68",
-        "text": "C 9-00 lj 21-00 АН-ВС"
+        "text": "C 9-00 c 21-00 АН-ВС"
       },
 
 
-    "promo-section": {
+    "promo": {
       "text": "закажите натяжной потолок -- получите второй в подарок! БЕсплатно",
-      "text-small": "Dct подробности по телефон 8 (495) 762-94-68",
-      "text-promo": "До конца акуции осталось"
+      "textSmall": "Dct подробности по телефон 8 (495) 762-94-68",
+      "textPromoBlock": "До конца акуции осталось"
     },
 
-    "work-section": {
-        "header-text": "Как мы работаем",
-        "first-text": "Оставляете заявку на выезд замещика",
-        "second-text": "Выезд мастера в дженьт поджачи заявки",
-        "third-text": "gjkgbcsdftv ljujdjh - вы вносите 10 % оплаты",
-        "fourth-text": " Демсострирем каталоги и снимаем замеры",
-        "fifth-text": "Монтируем потолок (2-3 часа)"
+    "workSection": {
+        "headerText": "Как мы работаем",
+        "items": [
+          {
+            "id": "1",
+            "title": "Оставляете заявку на выезд замещика",
+            "description": "First",
+            "alt": "work1"
+          },
+          {
+            "id": "2",
+            "title": "Выезд мастера в дженьт поджачи заявки",
+            "description": "Second",
+            "alt": "work2"
+          },
+          {
+            "id": "3",
+            "title": "Наше приемущество - вы вносите 10 % оплаты",
+            "description": "Third",
+            "alt": "work2"
+          },
+          {
+            "id": "4",
+            "title": "Демонстируем каталог и снимаем замеры",
+            "description": "Fourth",
+            "alt": "work4"
+          },
+          {
+            "id": "5",
+            "title": "Монтируем потолок (2-3 часа)",
+            "description": "Fifth",
+            "alt": "work5"
+          }
+        ]
+
       },
 
       "why-us-section": {

@@ -1,16 +1,14 @@
+
 .element {
     gap: 20px;
-    background-color: $color-milk;
+    background-color: $color-yellow;
     align-items: flex-start;
     z-index: 999;
-    padding: 30px 0px;
     font-size: 20px;
+    text-align: center;
     line-height: normal;
-    height: 230px;
-    width: 220px;
-    border-radius: 50%;
+    min-height: 220px;
     
-  
     @media (max-width: 830px) {
       font-size: 15px;
     }
@@ -25,6 +23,7 @@
   .title {
     width: 347px;
     font-size: inherit;
+    text-align: center;
     width: min-content;
     color: $color-black;
   }
