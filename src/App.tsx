@@ -2,12 +2,11 @@
 import Layout from './layout/layout';
 
 function App() {
-
-  return (
-    <>
-       <Layout/>
-    </>
-  )
+    return (
+        <>
+            <Layout />
+        </>
+    );
 }
 
-export default App
+export default App;

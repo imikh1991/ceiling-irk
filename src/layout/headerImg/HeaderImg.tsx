@@ -10,14 +10,14 @@ const HeaderImg = () => {
     // нужно реализовать
 
     return (
-        <header className={styles.wrapper}>
+        <section className={styles.wrapper}>
             <Header />
             <div className={styles.group}>
                 <LeftBanner />
                 <Slider />
                 <RightBanner />
             </div>
-        </header>
+        </section>
     );
 };
 

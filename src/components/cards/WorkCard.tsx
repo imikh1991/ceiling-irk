@@ -12,7 +12,7 @@ const WorkCard: React.FC<WorkCardProps> = ({ item }) => {
             <div className={styles.title}>{item.id}</div>
             <div className={styles.title}>{item.title}</div>
             <div className={styles.title}>{item.description}</div>
-            <div className={styles.title}>{item.alt}</div>
+            <img className={styles.title} src={item.img} alt={item.alt} />
         </div>
     );
 };

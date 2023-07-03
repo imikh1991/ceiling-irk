@@ -69,29 +69,34 @@
             "id": "1",
             "title": "Оставляете заявку на выезд замещика",
             "description": "First",
+            "img": "",
             "alt": "work1"
           },
           {
             "id": "2",
             "title": "Выезд мастера в дженьт поджачи заявки",
+            "img": "",
             "description": "Second",
             "alt": "work2"
           },
           {
             "id": "3",
             "title": "Наше приемущество - вы вносите 10 % оплаты",
+            "img": "",
             "description": "Third",
             "alt": "work2"
           },
           {
             "id": "4",
             "title": "Демонстируем каталог и снимаем замеры",
+            "img": "",
             "description": "Fourth",
             "alt": "work4"
           },
           {
             "id": "5",
             "title": "Монтируем потолок (2-3 часа)",
+            "img": "",
             "description": "Fifth",
             "alt": "work5"
           }
@@ -99,13 +104,46 @@
 
       },
 
-      "why-us-section": {
-        "header-text": "Почему му?",
-        "first-text": "7 лет успешной работы",
-        "second-text": "СМонтаж 2-3 часа",
-        "third-text": "Гарантия 15 лет на материал ",
-        "fourth-text": "Уборка после монтажа",
-        "fifth-text": "Предоплата всего 20%"
+      "advantagesSection": {
+        "headerText": "Почему мы?",
+
+        "items": [
+          {
+            "id": "1",
+            "title": "7 лет успешной работы",
+            "description": "First",
+            "img": "src/assets/img/thumb-icon.svg",
+            "alt": "work1"
+          },
+          {
+            "id": "2",
+            "title": "Монтаж 2-3 часа",
+            "img": "src/assets/img/clock-icon.svg",
+            "description": "Second",
+            "alt": "work2"
+          },
+          {
+            "id": "3",
+            "title": "Гарантия 15 лет на материал ",
+            "img": "src/assets/img/gift-icon.svg",
+            "description": "Third",
+            "alt": "work2"
+          },
+          {
+            "id": "4",
+            "title": "Уборка после монтажа",
+            "img": "src/assets/img/gift-icon.svg",
+            "description": "Fourth",
+            "alt": "work4"
+          },
+          {
+            "id": "5",
+            "title": "Предоплата всего 10%",
+            "img": "src/assets/img/clock-icon.svg",
+            "description": "Fifth",
+            "alt": "work5"
+          }
+        ]
       },
 
       "input-section": {

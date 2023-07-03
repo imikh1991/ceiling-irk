@@ -1,19 +1,20 @@
 // import React from 'react';
-import styles from './Work.module.scss';
+import styles from './Adv.module.scss';
 import config from '../../config/index.json';
 import WorkCard from '../cards/WorkCard';
 
-const Work = () => {
-    const { workSection } = config;
+const Adv = () => {
+    const { advantagesSection } = config;
 
     return (
         <div className={styles.element}>
-            <div className={styles.title}>{workSection.headerText}</div>
-            {workSection.items.map((item, index) => (
+            <div className={styles.title}>{advantagesSection.headerText}</div>
+
+            {advantagesSection.items.map((item, index) => (
                 <WorkCard key={index} item={item} />
             ))}
         </div>
     );
 };
 
-export default Work;
+export default Adv;

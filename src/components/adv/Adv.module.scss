@@ -1,13 +1,15 @@
+
 .element {
     display: flex;
     flex-direction: row;
     gap: 20px;
-    background-color: $color-green;
+    background-color: $color-grey;
     align-items: flex-start;
+    z-index: 999;
     font-size: 20px;
     text-align: center;
     line-height: normal;
-    min-height: 340px;;
+    min-height: 160px;
     
     @media (max-width: 830px) {
       font-size: 15px;
