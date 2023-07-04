@@ -9,7 +9,7 @@
   padding-top: 4rem;
   
 	&:before{
-		background: url('src/assets/img/bg-img-main.jpg') no-repeat;
+		background: url('/img/bg-img-main.jpg') no-repeat;
     content: "";
     display: block;
 		width: 100%;
@@ -22,7 +22,7 @@
 
 
   @media (max-width: 830px) {
-    font-size: 15px;
+    font-size: 30px;
   }
   
   @media (max-width: 555px) {

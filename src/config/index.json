@@ -7,13 +7,13 @@
       {
         "header1": "Натяжные потолки",
         "header2": "Пятый элемент уюта",
-        "img": "src/assets/img/bg-img-main.jpg",
+        "img": "/img/bg-img-main.jpg",
         "alt": "picture"
       },
 
       "bannerLeft": 
       {
-        "img": "src/assets/img/gift-icon.svg",
+        "img": "/img/gift-icon.svg",
         "text": "Точечный светильник в подарок за каждые 2 м² потолка",
         "alt": "picture"
       },
@@ -24,25 +24,25 @@
           {
             "title": "Комната красивая номер один ",
             "description": "Наш новый потолок 10 кв.м",
-            "img": "src/assets/img/swiper/swiper1.jpg",
+            "img": "/img/swiper/swiper1.jpg",
             "alt": "swiper1"
           },
           {
             "title": "Комната красивая номер два ",
             "description": "Наш второй новый потолок 20 кв.м",
-            "img": "src/assets/img/swiper/swiper2.jpg",
+            "img": "/img/swiper/swiper2.jpg",
             "alt": "swiper2"
           },
           {
             "title": "Комната красивая номер три ",
             "description": "Наш третий новый потолок 30 кв.м",
-            "img": "src/assets/img/swiper/swiper3.jpg",
+            "img": "/img/swiper/swiper3.jpg",
             "alt": "swiper3"
           },
           {
             "title": "Комната красивая номер четыре ",
             "description": "Наш четвертый новый потолок 40 кв.м",
-            "img": "src/assets/img/swiper/swiper4.jpg",
+            "img": "/img/swiper/swiper4.jpg",
             "alt": "swiper4"
           }
         ]
@@ -112,34 +112,34 @@
             "id": "1",
             "title": "7 лет успешной работы",
             "description": "First",
-            "img": "src/assets/img/thumb-icon.svg",
+            "img": "/img/thumb-icon.svg",
             "alt": "work1"
           },
           {
             "id": "2",
             "title": "Монтаж 2-3 часа",
-            "img": "src/assets/img/clock-icon.svg",
+            "img": "/img/clock-icon.svg",
             "description": "Second",
             "alt": "work2"
           },
           {
             "id": "3",
             "title": "Гарантия 15 лет на материал ",
-            "img": "src/assets/img/clock-icon.svg",
+            "img": "/img/clock-icon.svg",
             "description": "Third",
             "alt": "work2"
           },
           {
             "id": "4",
             "title": "Уборка после монтажа",
-            "img": "src/assets/img/thumb-icon.svg",
+            "img": "/img/thumb-icon.svg",
             "description": "Fourth",
             "alt": "work4"
           },
           {
             "id": "5",
             "title": "Предоплата всего 10%",
-            "img": "src/assets/img/clock-icon.svg",
+            "img": "/img/clock-icon.svg",
             "description": "Fifth",
             "alt": "work5"
           }
@@ -167,25 +167,21 @@
           {
             "title": "1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean accumsan maximus hendrerit. Donec molestie libero non enim ullamcorper, quis malesuada leo",
             "description": "Наталья г. Москва",
-            "img": "src/assets/img/swiper/swiper1.jpg",
             "alt": "swiper1"
           },
           {
             "title": "2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean accumsan maximus hendrerit. Donec molestie libero non enim ullamcorper, quis malesuada leo",
             "description": "Елена г. Иркутск",
-            "img": "src/assets/img/swiper/swiper2.jpg",
             "alt": "swiper2"
           },
           {
             "title": "3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean accumsan maximus hendrerit. Donec molestie libero non enim ullamcorper, quis malesuada leo",
             "description": "Татьяна г. Калининград",
-            "img": "src/assets/img/swiper/swiper3.jpg",
             "alt": "swiper3"
           },
           {
             "title": "4 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean accumsan maximus hendrerit. Donec molestie libero non enim ullamcorper, quis malesuada leo",
             "description": "Виктория г. Сочи",
-            "img": "src/assets/img/swiper/swiper4.jpg",
             "alt": "swiper4"
           }
         ]
@@ -195,6 +191,4 @@
         "footerText": "Создать уют в доме просто, как позвонить",
         "footerPhone": "8 (495) 762-94-68"
       }
-  
-
     }
