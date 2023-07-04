@@ -12,7 +12,7 @@
 
 
   @media (max-width: 830px) {
-    font-size: 15px;
+    font-size: 25px;
   }
   
   @media (max-width: 555px) {
@@ -22,9 +22,21 @@
   }
 }
 
+.address {
+  min-height: 60px;
+  flex: 1 0 120px;
+  max-width: 280px;
+}
+
+.phone {
+  min-height: 60px;
+  flex: 1 0 120px;
+  max-width: 280px;
+}
+
 .btn {
-  border-radius: 10%;
-  max-width: calc(50% - 30px);
+  flex: 1 0 50px;
+  max-width: 280px;
   background: linear-gradient(0deg, #F8E93F 0%, #F8E93F 100%), linear-gradient(0deg, #FEF658 0%, #FEF658 100%)
 }
 

@@ -19,7 +19,7 @@ function Form() {
         <>
             <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
                 <h2>Form</h2>
-                <div>
+                <div className={styles.address}>
                     <label htmlFor="address"> </label>
                     <input
                         type="text"
@@ -30,7 +30,7 @@ function Form() {
                     {errors.address && <span className={styles.error}>Заполните поле</span>}
                 </div>
 
-                <div>
+                <div className={styles.phone}>
                     <label htmlFor="phone"> </label>
                     <input
                         type="text"

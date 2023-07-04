@@ -26,6 +26,10 @@
   .title {
     font-size: 35px;
     color: $color-black;
+
+    @media (max-width: 555px) {
+      font-size: 22px;
+    }
   }
   
   .img {

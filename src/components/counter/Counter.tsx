@@ -29,8 +29,8 @@ export const Counter = () => {
             </div>
 
             <div className={styles.counterItem}>
-                <span className="value">{String(timeLeft.seconds).padStart(2, '0')}</span>
-                <span className="label"> Секунд</span>
+                <span>{String(timeLeft.seconds).padStart(2, '0')}</span>
+                <span> Секунд</span>
             </div>
         </div>
     );

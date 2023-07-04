@@ -9,9 +9,11 @@ const Work = () => {
     return (
         <div className={styles.element}>
             <div className={styles.title}>{workSection.headerText}</div>
-            {workSection.items.map((item, index) => (
-                <WorkCard key={index} item={item} />
-            ))}
+            <div className={styles.item}>
+                {workSection.items.map((item, index) => (
+                    <WorkCard key={index} item={item} />
+                ))}
+            </div>
         </div>
     );
 };

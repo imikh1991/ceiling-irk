@@ -9,10 +9,10 @@ interface WorkCardProps {
 const WorkCard: React.FC<WorkCardProps> = ({ item }) => {
     return (
         <div className={styles.element}>
-            <div className={styles.title}>{item.id}</div>
+            {item.id && <div className={styles.id}>{item.id}</div>}
             <div className={styles.title}>{item.title}</div>
-            <div className={styles.title}>{item.description}</div>
-            <img className={styles.title} src={item.img} alt={item.alt} />
+            <div className={styles.description}>{item.description}</div>
+            <img className={styles.img} src={item.img} alt={item.alt} />
         </div>
     );
 };

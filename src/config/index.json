@@ -63,42 +63,42 @@
     },
 
     "workSection": {
-        "headerText": "Как мы работаем",
+        "headerText": "Как мы работаем?",
         "items": [
           {
             "id": "1",
             "title": "Оставляете заявку на выезд замещика",
-            "description": "First",
+            "description": "",
             "img": "",
-            "alt": "work1"
+            "alt": ""
           },
           {
             "id": "2",
-            "title": "Выезд мастера в дженьт поджачи заявки",
+            "title": "Выезд мастера в день подачи заявки",
             "img": "",
-            "description": "Second",
-            "alt": "work2"
+            "description": "",
+            "alt": ""
           },
           {
             "id": "3",
             "title": "Наше приемущество - вы вносите 10 % оплаты",
             "img": "",
-            "description": "Third",
-            "alt": "work2"
+            "description": "",
+            "alt": ""
           },
           {
             "id": "4",
             "title": "Демонстируем каталог и снимаем замеры",
             "img": "",
-            "description": "Fourth",
-            "alt": "work4"
+            "description": "",
+            "alt": ""
           },
           {
             "id": "5",
             "title": "Монтируем потолок (2-3 часа)",
             "img": "",
-            "description": "Fifth",
-            "alt": "work5"
+            "description": "",
+            "alt": ""
           }
         ]
 
@@ -109,35 +109,35 @@
 
         "items": [
           {
-            "id": "1",
+            "id": "",
             "title": "7 лет успешной работы",
             "description": "First",
             "img": "/img/thumb-icon.svg",
             "alt": "work1"
           },
           {
-            "id": "2",
+            "id": "",
             "title": "Монтаж 2-3 часа",
             "img": "/img/clock-icon.svg",
             "description": "Second",
             "alt": "work2"
           },
           {
-            "id": "3",
+            "id": "",
             "title": "Гарантия 15 лет на материал ",
             "img": "/img/clock-icon.svg",
             "description": "Third",
             "alt": "work2"
           },
           {
-            "id": "4",
+            "id": "",
             "title": "Уборка после монтажа",
             "img": "/img/thumb-icon.svg",
             "description": "Fourth",
             "alt": "work4"
           },
           {
-            "id": "5",
+            "id": "",
             "title": "Предоплата всего 10%",
             "img": "/img/clock-icon.svg",
             "description": "Fifth",
