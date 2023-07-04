@@ -4,7 +4,7 @@ import styles from './MainSection.module.scss';
 import Adv from '../../components/adv/Adv';
 import Form from '../../components/forms/Form';
 import Calc from '../../components/calc/Calc';
-
+import Feedback from '../../components/slides/feedback/Feedback';
 const MainSection = () => {
     // const { navigation } = config;
     // нужно реализовать
@@ -14,6 +14,7 @@ const MainSection = () => {
             <Adv />
             <Form />
             <Calc />
+            <Feedback />
         </section>
     );
 };

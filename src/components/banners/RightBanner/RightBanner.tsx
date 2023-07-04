@@ -9,9 +9,11 @@ const RightBanner = () => {
     return (
         <>
             <div className={styles.element}>
-                <h1>{bannerRight.head}</h1>
-                <p>{bannerRight.phone}</p>
-                <p>{bannerRight.text}</p>
+                <div className={styles.group}>
+                    <h2 className={styles.title}>{bannerRight.head}</h2>
+                    <p className={styles.phone}>{bannerRight.phone}</p>
+                    <p className={styles.text}>{bannerRight.text}</p>
+                </div>
             </div>
         </>
     );

@@ -1,13 +1,16 @@
-
 .element {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     gap: 20px;
     background-color: $color-yellow;
     align-items: flex-start;
+  
     z-index: 999;
     font-size: 20px;
     text-align: center;
     line-height: normal;
-    min-height: 220px;
+    min-height: 260px;
     
     @media (max-width: 830px) {
       font-size: 15px;
@@ -21,10 +24,7 @@
   }
   
   .title {
-    width: 347px;
-    font-size: inherit;
-    text-align: center;
-    width: min-content;
+    font-size: 35px;
     color: $color-black;
   }
   

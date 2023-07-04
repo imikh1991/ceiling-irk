@@ -7,12 +7,9 @@
     align-items: flex-start;
     font-size: 15px;
     line-height: normal;
-    max-height: 340px;
-    max-width: 556px;
-    border: 10px;
-    border-color: $color-milk;
-    border-radius: 20px;
-    
+    max-height: 235px;
+    max-width: 860px;
+
     @media (max-width: 830px) {
       font-size: 25px;
     }

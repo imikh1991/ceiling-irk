@@ -1,12 +1,17 @@
 .element {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     gap: 20px;
     background-color: $color-black;
-    align-items: flex-start;
     z-index: 999;
-    font-size: 20px;
+    margin: 40px 0px 0px 0px;
+    padding: 30px 0px 0px 0px;
+    font-size: 30px;
     line-height: normal;
-    height: 230px;
-    width: 220px;
+    height: 270px;
+    width: 270px;
+    opacity: 90%;
     border-radius: 50%;
     
   
@@ -20,17 +25,29 @@
       gap: 10px;
     }
   }
-  
-  .title {
-    width: 347px;
-    font-size: inherit;
-    width: min-content;
-    color: $color-black;
+
+  .group {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
   }
   
-  .img {
-    background-color: $color-milk;
-    max-width: 44px;
-    max-height: 50px;
+  .title {
+   
+    font-size: inherit;
+    text-align: center;
+    color: $color-milk;
+  }
+  
+  .phone {
+    
+    color: $color-yellow;
+  }
 
+  .text {
+   
+    text-align: center;
+    color: $color-milk;
   }

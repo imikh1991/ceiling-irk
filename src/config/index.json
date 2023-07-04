@@ -14,7 +14,7 @@
       "bannerLeft": 
       {
         "img": "src/assets/img/gift-icon.svg",
-        "text": "Точечный светильник в подарок за каждые 2 метра потолка",
+        "text": "Точечный светильник в подарок за каждые 2 м² потолка",
         "alt": "picture"
       },
 
@@ -52,14 +52,14 @@
       {
         "head": "Звоните",
         "phone": "8(495)762-94-68",
-        "text": "C 9-00 c 21-00 АН-ВС"
+        "text": "C 9:00 до 21:00 пн-вс"
       },
 
 
     "promo": {
-      "text": "закажите натяжной потолок -- получите второй в подарок! БЕсплатно",
-      "textSmall": "Dct подробности по телефон 8 (495) 762-94-68",
-      "textPromoBlock": "До конца акуции осталось"
+      "text": "Закажите натяжной потолок - получите второй в подарок! Бесплатно",
+      "textSmall": "Все подробности по телефон 8 (495) 762-94-68",
+      "textPromoBlock": ""
     },
 
     "workSection": {
@@ -125,14 +125,14 @@
           {
             "id": "3",
             "title": "Гарантия 15 лет на материал ",
-            "img": "src/assets/img/gift-icon.svg",
+            "img": "src/assets/img/clock-icon.svg",
             "description": "Third",
             "alt": "work2"
           },
           {
             "id": "4",
             "title": "Уборка после монтажа",
-            "img": "src/assets/img/gift-icon.svg",
+            "img": "src/assets/img/thumb-icon.svg",
             "description": "Fourth",
             "alt": "work4"
           },
@@ -161,16 +161,39 @@
         "total-text": "Примерная стоимость"
       },
 
-      "feedback-section": {
-        "header-text": "Отзывы",
-        "feedback-text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sapien dui, gravida quis purus a, convallis vulputate massa. In ut bibendum quam. Nam varius ipsum quis elit faucibus posuere. Fusce sagittis cursus mauris, et gravida orci pretium sed. Donec eu velit vel mi dignissim cursus fermentum tincidunt arcu. Vestibulum malesuada vel ligula a tristique. Suspendisse auctor aliquam ultrices. Duis sagittis malesuada tortor ac porttitor. Praesent gravida turpis vel egestas efficitur. Curabitur et nibh non libero luctus pharetra. Praesent posuere lectus ac quam tincidunt, sit amet tristique metus dapibus.",
-        "name-text": "Елена К.",
-        "address-text": "Москва, Печатники улица Полбина, д. 49"
+      "feedbackSlides": {
+        "title": "Swiper",
+        "items": [
+          {
+            "title": "1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean accumsan maximus hendrerit. Donec molestie libero non enim ullamcorper, quis malesuada leo",
+            "description": "Наталья г. Москва",
+            "img": "src/assets/img/swiper/swiper1.jpg",
+            "alt": "swiper1"
+          },
+          {
+            "title": "2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean accumsan maximus hendrerit. Donec molestie libero non enim ullamcorper, quis malesuada leo",
+            "description": "Елена г. Иркутск",
+            "img": "src/assets/img/swiper/swiper2.jpg",
+            "alt": "swiper2"
+          },
+          {
+            "title": "3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean accumsan maximus hendrerit. Donec molestie libero non enim ullamcorper, quis malesuada leo",
+            "description": "Татьяна г. Калининград",
+            "img": "src/assets/img/swiper/swiper3.jpg",
+            "alt": "swiper3"
+          },
+          {
+            "title": "4 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean accumsan maximus hendrerit. Donec molestie libero non enim ullamcorper, quis malesuada leo",
+            "description": "Виктория г. Сочи",
+            "img": "src/assets/img/swiper/swiper4.jpg",
+            "alt": "swiper4"
+          }
+        ]
       },
 
-      "footer-section": {
-        "header-text": "Создать уют в доме просто, как позвонить",
-        "phone": "8(495)762-94-68"
+      "footerSection": {
+        "footerText": "Создать уют в доме просто, как позвонить",
+        "footerPhone": "8 (495) 762-94-68"
       }
   
 

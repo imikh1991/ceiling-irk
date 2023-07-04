@@ -20,14 +20,24 @@ function Form() {
             <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
                 <h2>Form</h2>
                 <div>
-                    <label htmlFor="address">Address:</label>
-                    <input type="text" id="address" {...register('address', { required: true })} />
+                    <label htmlFor="address"> </label>
+                    <input
+                        type="text"
+                        id="address"
+                        placeholder="Ваш адрес"
+                        {...register('address', { required: true })}
+                    />
                     {errors.address && <span className={styles.error}>Заполните поле</span>}
                 </div>
 
                 <div>
-                    <label htmlFor="phone">Phone:</label>
-                    <input type="text" id="phone" {...register('phone', { required: true })} />
+                    <label htmlFor="phone"> </label>
+                    <input
+                        type="text"
+                        id="phone"
+                        placeholder="Ваш телефон"
+                        {...register('phone', { required: true })}
+                    />
                     {errors.phone && <span className={styles.error}>Заполните поле</span>}
                 </div>
 
