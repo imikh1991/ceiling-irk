@@ -113,7 +113,7 @@
             "description": "First",
             "img": "/img/thumb-icon.svg",
             "alt": "work1",
-            "href": "about"
+            "href": "feedback"
           },
           {
           
@@ -137,7 +137,7 @@
             "img": "/img/woman-icon.png",
             "description": "Fourth",
             "alt": "work4",
-            "href": "#"
+            "href": ""
           },
           {
            
@@ -145,7 +145,7 @@
             "img": "/img/moneybox-icon.png",
             "description": "Fifth",
             "alt": "work5",
-            "href": "#"
+            "href": ""
           }
         ]
       },
@@ -166,7 +166,7 @@
       },
 
       "feedbackSlides": {
-        "title": "Swiper",
+        "title": "Отзывы",
         "items": [
           {
             "title": "1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean accumsan maximus hendrerit. Donec molestie libero non enim ullamcorper, quis malesuada leo",
