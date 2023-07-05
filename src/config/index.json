@@ -106,42 +106,46 @@
 
       "advantagesSection": {
         "headerText": "Почему мы?",
-
         "items": [
           {
-            "id": "",
+            
             "title": "7 лет успешной работы",
             "description": "First",
             "img": "/img/thumb-icon.svg",
-            "alt": "work1"
+            "alt": "work1",
+            "href": "about"
           },
           {
-            "id": "",
+          
             "title": "Монтаж 2-3 часа",
             "img": "/img/clock-icon.svg",
             "description": "Second",
-            "alt": "work2"
+            "alt": "work2",
+            "href": "#"
           },
           {
-            "id": "",
+           
             "title": "Гарантия 15 лет на материал ",
             "img": "/img/clock-icon.svg",
             "description": "Third",
-            "alt": "work2"
+            "alt": "work2",
+            "href": "#"
           },
           {
-            "id": "",
+           
             "title": "Уборка после монтажа",
-            "img": "/img/thumb-icon.svg",
+            "img": "/img/woman-icon.png",
             "description": "Fourth",
-            "alt": "work4"
+            "alt": "work4",
+            "href": "#"
           },
           {
-            "id": "",
+           
             "title": "Предоплата всего 10%",
-            "img": "/img/clock-icon.svg",
+            "img": "/img/moneybox-icon.png",
             "description": "Fifth",
-            "alt": "work5"
+            "alt": "work5",
+            "href": "#"
           }
         ]
       },

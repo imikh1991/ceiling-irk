@@ -27,25 +27,31 @@
   
   @media (max-width: 555px) {
     padding: 45px 0px 20px;
-    font-size: 22px;
+    font-size: 32px;
     gap: 10px;
   }
 }
 
 .group {
   display: flex;
-  flex-wrap: wrap;
   padding: 0px 80px 0px 80px;
   gap: 10px;
   width: 90%;
   flex-direction: row;
   justify-content: space-between;
 
-  @media (max-width: 1240px) {
+  @media (max-width: 1410px) {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 45px 0px 20px;
     font-size: 22px;
+    gap: 30px;
+  }
+
+  @media (max-width: 555px) {
+    font-size: 35px;
     gap: 10px;
   }
 

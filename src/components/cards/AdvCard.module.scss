@@ -1,0 +1,22 @@
+.element {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: $color-bg;
+    width: 160px; 
+    height: 160px;
+    @media (max-width: 830px) {
+        font-size: 15px;
+      }
+  }
+
+  .link {
+    display: flex; 
+    gap: 8px; 
+    cursor: pointer; 
+    opacity: 0.9; 
+    transition-duration: 300ms; 
+    transition-timing-function: ease-in-out;
+  } 

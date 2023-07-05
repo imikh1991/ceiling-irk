@@ -1,7 +1,7 @@
 // import React from 'react';
 import styles from './Adv.module.scss';
 import config from '../../config/index.json';
-import WorkCard from '../cards/WorkCard';
+import AdvCard from '../cards/AdvCard';
 
 const Adv = () => {
     const { advantagesSection } = config;
@@ -9,10 +9,11 @@ const Adv = () => {
     return (
         <div className={styles.element}>
             <div className={styles.title}>{advantagesSection.headerText}</div>
-
-            {advantagesSection.items.map((item, index) => (
-                <WorkCard key={index} item={item} />
-            ))}
+            <div className={styles.items}>
+                {advantagesSection.items.map((item, index) => (
+                    <AdvCard key={index} item={item} />
+                ))}
+            </div>
         </div>
     );
 };
