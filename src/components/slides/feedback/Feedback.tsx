@@ -12,8 +12,8 @@ const Feedback = () => {
     const { feedbackSlides } = config;
 
     return (
-        <div id="feedback">
-            <h2> {feedbackSlides.title}</h2>
+        <div className={styles.feedback} id="feedback">
+            <h2 className={styles.title}>{feedbackSlides.title}</h2>
             <Swiper
                 className={styles.element}
                 spaceBetween={30}

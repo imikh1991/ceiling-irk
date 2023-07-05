@@ -1,15 +1,24 @@
 .form {
+  margin-top: 2rem;
+  padding: 2rem;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  gap: 10px;
+  gap: 15px;
   flex-wrap: wrap;
-	min-width: calc(50% - 30px);
+	min-width: calc(60% - 30px);
   min-height: 140px;
 	background-color: $color-blue;
 	position: relative;
+  border-radius: 10px;
+  box-shadow: 0px 1px 0px 0px rgba(20, 106, 155, 0.004);
 
+  input {
+    min-height: 60px;
+    min-width: 12rem;
+    border-radius: 10px;
+  }
 
   @media (max-width: 830px) {
     font-size: 25px;
@@ -22,26 +31,38 @@
   }
 }
 
+.group {
+  
+  display: flex;
+  flex-direction: column;
+}
 .address {
-  min-height: 60px;
+  display: flex;
+  flex-direction: column;
+  
   flex: 1 0 120px;
   max-width: 280px;
 }
 
 .phone {
-  min-height: 60px;
+  display: flex;
+  flex-direction: column;
   flex: 1 0 120px;
   max-width: 280px;
+  
 }
 
 .btn {
   flex: 1 0 50px;
+  height: 60px;
   max-width: 280px;
+  border-radius: 10px;
   background: linear-gradient(0deg, #F8E93F 0%, #F8E93F 100%), linear-gradient(0deg, #FEF658 0%, #FEF658 100%)
 }
 
 .error {
-  color: brown;
+  color: $color-milk;
+  height: 60px;
 }
     
   

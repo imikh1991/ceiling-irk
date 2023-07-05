@@ -18,27 +18,30 @@ function Form() {
     return (
         <>
             <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
-                <h2>Form</h2>
-                <div className={styles.address}>
-                    <label htmlFor="address"> </label>
-                    <input
-                        type="text"
-                        id="address"
-                        placeholder="Ваш адрес"
-                        {...register('address', { required: true })}
-                    />
-                    {errors.address && <span className={styles.error}>Заполните поле</span>}
+                <div className={styles.group}>
+                    <div className={styles.address}>
+                        <label htmlFor="address"> </label>
+                        <input
+                            type="text"
+                            id="address"
+                            placeholder="Ваш адрес"
+                            {...register('address', { required: true })}
+                        />
+                    </div>
+                    <div> {errors.address && <span className={styles.error}>Нужно заполнить</span>}</div>
                 </div>
 
-                <div className={styles.phone}>
-                    <label htmlFor="phone"> </label>
-                    <input
-                        type="text"
-                        id="phone"
-                        placeholder="Ваш телефон"
-                        {...register('phone', { required: true })}
-                    />
-                    {errors.phone && <span className={styles.error}>Заполните поле</span>}
+                <div className={styles.group}>
+                    <div className={styles.phone}>
+                        <label htmlFor="phone"> </label>
+                        <input
+                            type="text"
+                            id="phone"
+                            placeholder="Ваш телефон"
+                            {...register('phone', { required: true })}
+                        />
+                    </div>
+                    <div> {errors.phone && <span className={styles.error}>Нужно заполнить</span>}</div>
                 </div>
 
                 <button className={styles.btn} type="submit">

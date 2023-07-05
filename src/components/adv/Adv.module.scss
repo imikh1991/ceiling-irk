@@ -44,6 +44,28 @@
     
   }
 
+  .items > *:nth-child(1) {
+    color: blue;
+    text-decoration: underline;
+  }
+
+  .items > *:nth-child(2),
+  .items > *:nth-child(3) {
+    color: blue;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+  }
+
+  .items > *:nth-child(1):hover,
+  .items > *:nth-child(2):hover,
+  .items > *:nth-child(3):hover  {
+    color: #6d8601;
+  }
+
+  .description {
+    width: 100px;
+    height: 100px;
+  }
   
   .title {
     width: 347px;
