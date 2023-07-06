@@ -3,12 +3,12 @@ import express from 'express';
 //import path from 'path';
 //import cors from 'cors';
 import nodemailer from 'nodemailer';
-//import router from 'express';
+// import router from 'express';
 import { createServer } from 'vite';
 //import { fileURLToPath } from 'url';
 import { AUTH_USER, AUTH_PASSWORD } from './src/const/auth-data';
 // const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const port = process.env.PORT || 5173;
+const port = process.env.PORT || 5174;
 
 async function startServer() {
     const app = express();
@@ -16,7 +16,7 @@ async function startServer() {
 
     const vite = await createServer({
         server: {
-            middlewareMode: true,
+            middlewareMode: false,
             watch: {
                 usePolling: true,
                 interval: 100,
@@ -25,27 +25,26 @@ async function startServer() {
         appType: 'custom',
     });
 
+    const transporter = nodemailer.createTransport({
+        host: 'smtp.gmail.com',
+        auth: {
+            user: AUTH_USER,
+            pass: AUTH_PASSWORD,
+        },
+    });
+
+    transporter.verify((error) => {
+        if (error) {
+            console.log(error);
+        } else {
+            console.log('Server is ready to take messages');
+        }
+    });
+
     app.use(vite.middlewares);
 
     app.post('/send', async (req, res, next) => {
         //const url = req.originalUrl;
-        const contactEmail = nodemailer.createTransport({
-            host: 'smtp.gmail.com',
-            auth: {
-                user: AUTH_USER,
-                pass: AUTH_PASSWORD,
-            },
-        });
-
-        contactEmail.verify((error) => {
-            if (error) {
-                console.log(error);
-            } else {
-                console.log('Ready to Send');
-            }
-        });
-
-        // отправка почты
         const address = req.body.address;
         const phone = req.body.phone;
         const mail = {
@@ -53,10 +52,10 @@ async function startServer() {
             to: 'mr.mihoho@gmail.com',
             subject: 'Contact Form Submission',
             html: `<p>Phone: ${phone}</p>
-             <p>Phone: ${phone}</p>
-             <p>Message: ${address}</p>`,
+                 <p>Phone: ${phone}</p>
+                 <p>Message: ${address}</p>`,
         };
-        contactEmail.sendMail(mail, (error) => {
+        transporter.sendMail(mail, (error) => {
             if (error) {
                 res.json({ status: 'ERROR' });
             } else {
@@ -66,13 +65,14 @@ async function startServer() {
 
         try {
             // логика отправки письма
-            // нужно доделывать - здесь ошибка парсинга JSON
         } catch (e) {
             const error = e as Error;
             vite?.ssrFixStacktrace(error);
             res.status(500).end(error.stack);
             next(error);
         }
+
+        // отправка почты
     });
 
     app.listen(port, () => {
