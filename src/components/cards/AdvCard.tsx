@@ -9,16 +9,10 @@ interface AdvCardProps {
 
 const AdvCard: React.FC<AdvCardProps> = ({ item }) => {
     const [isFocused, setIsFocused] = useState(false);
-    // обработаем события
-    /* 
-     onSetActive={handleSetActive}
-      onSetInactive={handleSetInactive}
-    */
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+
     const handleSetActive = () => {
         setIsFocused(true);
     };
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const handleSetInactive = () => {
         setIsFocused(false);
     };

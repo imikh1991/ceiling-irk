@@ -1,30 +1,19 @@
-//import fs from 'fs';
 import express from 'express';
 //import path from 'path';
 //import cors from 'cors';
 import nodemailer from 'nodemailer';
-// import router from 'express';
-import { createServer } from 'vite';
-//import { fileURLToPath } from 'url';
+import cors from 'cors';
+import bodyParser from 'body-parser';
 import { AUTH_USER, AUTH_PASSWORD } from './src/const/auth-data';
-// const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const port = process.env.PORT || 5174;
+const port = process.env.PORT || 5175;
 
 async function startServer() {
     const app = express();
+    // parse application/x-www-form-urlencoded
+    app.use(bodyParser.urlencoded({ extended: false }));
+    // parse application/json
+    app.use(bodyParser.json());
     // const router = express.Router();
-
-    const vite = await createServer({
-        server: {
-            middlewareMode: false,
-            watch: {
-                usePolling: true,
-                interval: 100,
-            },
-        },
-        appType: 'custom',
-    });
-
     const transporter = nodemailer.createTransport({
         host: 'smtp.gmail.com',
         auth: {
@@ -32,7 +21,7 @@ async function startServer() {
             pass: AUTH_PASSWORD,
         },
     });
-
+    // верификация работает - транспорт готов
     transporter.verify((error) => {
         if (error) {
             console.log(error);
@@ -41,38 +30,26 @@ async function startServer() {
         }
     });
 
-    app.use(vite.middlewares);
-
-    app.post('/send', async (req, res, next) => {
-        //const url = req.originalUrl;
+    app.use(cors());
+    // отправка почты
+    app.post('/send', async (req, res) => {
+        console.log(req.body);
         const address = req.body.address;
         const phone = req.body.phone;
         const mail = {
-            from: phone,
             to: 'mr.mihoho@gmail.com',
-            subject: 'Contact Form Submission',
-            html: `<p>Phone: ${phone}</p>
+            subject: '♥♥♥ Contact Form Submission',
+            html: `New Order from web-site 
                  <p>Phone: ${phone}</p>
-                 <p>Message: ${address}</p>`,
+                 <p>Address: ${address}</p>`,
         };
         transporter.sendMail(mail, (error) => {
             if (error) {
-                res.json({ status: 'ERROR' });
+                res.json({ status: 'fail' });
             } else {
-                res.json({ status: 'Message Sent' });
+                res.json({ status: 'success' });
             }
         });
-
-        try {
-            // логика отправки письма
-        } catch (e) {
-            const error = e as Error;
-            vite?.ssrFixStacktrace(error);
-            res.status(500).end(error.stack);
-            next(error);
-        }
-
-        // отправка почты
     });
 
     app.listen(port, () => {

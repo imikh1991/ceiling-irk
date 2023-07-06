@@ -1,12 +1,25 @@
-import React, { useState } from 'react';
+import { useState, useMemo } from 'react';
 import { useForm } from 'react-hook-form';
 import styles from './Form.module.scss';
-// import { Inputs } from '../../models/types';
 import axios from 'axios';
+// import CloseButton from '../buttons/closeButton';
+
 // set up interface object
 interface FormData {
     address: string;
     phone: string;
+}
+type SuccessMessageProps = {
+    onClose: () => void;
+};
+
+function SuccessMessage({ onClose }: SuccessMessageProps) {
+    return (
+        <div className={styles.result}>
+            Спасибо! Мы свяжемся с вами в ближайшее время.
+            <button onClick={onClose}>X</button>
+        </div>
+    );
 }
 
 function Form() {
@@ -17,10 +30,25 @@ function Form() {
         formState: { errors },
     } = useForm<FormData>({});
 
-    // работаем с данными формы
+    const defaultValues = useMemo(
+        () => ({
+            address: '',
+            phone: '',
+        }),
+        []
+    );
+
+    /* React.useEffect(() => {
+        if (status === 'Delivered') {
+            alert('SubmitSuccessful');
+            setData();
+        }
+    }, [reset, defaultValues]);
+    */
     const [status, setStatus] = useState('Submit');
-    const [agreed, setAgreed] = useState(false);
-    const [data, setData] = React.useState<FormData[]>([]);
+    const [showSuccessMessage, setShowSuccessMessage] = useState(false);
+    // const [agreed, setAgreed] = useState(false);
+    // const [data, setData] = React.useState<FormData[]>([]);
     // const { contact } = config;
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const onSubmit = async (data: FormData, event: any) => {
@@ -29,28 +57,34 @@ function Form() {
             setStatus('Sending...');
             const addressUser = data.address;
             const phoneUser = data.phone;
-            // console.log('Из формы data >>', setData);
             // обработаем отправку данных
             axios({
                 method: 'POST',
-                url: 'http://localhost:5173/send',
+                url: 'http://localhost:5175/send',
                 data: {
                     address: addressUser,
                     phone: phoneUser,
                 },
-                // eslint-disable-next-line @typescript-eslint/no-explicit-any
-            }).then((response: any) => {
-                if (response.data.msg === 'success') {
-                    alert('Message Sent.');
-                    reset();
-                } else if (response.data.msg === 'fail') {
-                    alert('Message failed to send.');
+            }).then((res) => {
+                console.log(res);
+                if (res.data.status === 'success') {
+                    setStatus('Delivered');
+                    setShowSuccessMessage(true);
+                    alert(status);
+                    reset(defaultValues);
+                } else if (res.data.status === 'fail') {
+                    setStatus('Failed');
+                    alert(status);
                 }
             });
         } catch (e) {
             alert(e);
         }
     };
+    setTimeout(() => {
+        // исчезает сообщение
+        setStatus('Submit');
+    }, 15000);
 
     return (
         <>
@@ -84,6 +118,11 @@ function Form() {
                 <button className={styles.btn} type="submit">
                     Вызвать замерщика
                 </button>
+                {status === 'Delivered' && (
+                    <div className={styles.result}>
+                        {showSuccessMessage && <SuccessMessage onClose={() => setShowSuccessMessage(false)} />}
+                    </div>
+                )}
             </form>
         </>
     );

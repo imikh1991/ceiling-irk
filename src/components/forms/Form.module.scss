@@ -33,13 +33,11 @@
 
 .group {
   
-  display: flex;
   flex-direction: column;
 }
 .address {
   display: flex;
   flex-direction: column;
-  
   flex: 1 0 120px;
   max-width: 280px;
 }
@@ -63,6 +61,22 @@
 .error {
   color: $color-milk;
   height: 60px;
+}
+
+.result {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-milk;
+  text-align: center;
+  border: $color-dark-grey solid 2px;
+  padding: 10px;
+  border-radius: 10px;
+  filter: drop-shadow(0 0 0.15rem rgb(45, 45, 45));
+
+  width: 487px;
+  height: 209px;
 }
     
   

@@ -1,7 +1,9 @@
 .element {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     z-index: 999;
+    gap: 10px;
     font-size: 15px;
     text-align: center;
     line-height: normal;
@@ -68,11 +70,9 @@
   }
   
   .title {
-    width: 347px;
-    font-size: 35px;
+    font-size: 45px;
     font-weight: 500;
     text-align: center;
-    width: min-content;
     color: $color-black;
   }
   
