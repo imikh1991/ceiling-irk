@@ -1,0 +1,47 @@
+.feedback {
+  width: 860px;
+ 
+}
+
+.element {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 20px;
+    background-color: $color-milk;
+    align-items: flex-start;
+    font-size: 15px;
+    line-height: normal;
+    max-height: 235px;
+    max-width: 860px;
+
+    @media (max-width: 830px) {
+      font-size: 25px;
+    }
+    
+    @media (max-width: 555px) {
+      padding: 45px 0px 20px;
+      font-size: 12px;
+      gap: 10px;
+      max-height: calc(100% - 30px);
+      max-width: calc(100% - 30px);
+    }
+  }
+  
+  .title {
+    font-size: 25px;
+    width: min-content;
+    color: $color-black;
+  }
+
+  .description {
+    color: $color-black;
+
+  }
+
+  
+  img {
+    background-color: $color-milk;
+    max-width: 100%;
+    max-height: 100%;
+  }

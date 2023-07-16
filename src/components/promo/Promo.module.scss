@@ -1,0 +1,40 @@
+.element {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+    background-color: $color-yellow;
+    align-items: flex-start;
+  
+    z-index: 999;
+    font-size: 20px;
+    text-align: center;
+    line-height: normal;
+    min-height: 260px;
+    
+    @media (max-width: 830px) {
+      font-size: 15px;
+    }
+    
+    @media (max-width: 555px) {
+      padding: 45px 0px 20px;
+      font-size: 12px;
+      gap: 10px;
+    }
+  }
+  
+  .title {
+    font-size: 35px;
+    color: $color-black;
+
+    @media (max-width: 555px) {
+      font-size: 22px;
+    }
+  }
+  
+  .img {
+    background-color: $color-milk;
+    max-width: 44px;
+    max-height: 50px;
+
+  }

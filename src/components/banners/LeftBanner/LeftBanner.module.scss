@@ -1,34 +1,41 @@
 .element {
     display: flex;
+    flex-direction: column;
     gap: 20px;
-    align-items: flex-start;
-    padding: 30px 0px;
-    font-size: 50px;
+    background-color: $color-milk;
+    align-items: center;
+    z-index: 999;
+    margin: 40px 0px 0px 0px;
+    padding: 30px 0px 0px 0px;
+    font-size: 20px;
     line-height: normal;
-    min-height: 220px;
-    min-width: 200px;
+    height: 270px;
+    width: 270px;
+    opacity: 90%;
+    border-radius: 50%;
     
   
     @media (max-width: 830px) {
-      font-size: 35px;
+      font-size: 20px;
     }
     
     @media (max-width: 555px) {
       padding: 45px 0px 20px;
-      font-size: 22px;
+      font-size: 20px;
       gap: 10px;
     }
   }
   
   .title {
-    width: 347px;
+    width: 207px;
     font-size: inherit;
-    width: min-content;
-    color: $color-main;
+    text-align: center;
+    color: $color-black;
   }
   
-  .pageTitle {
-    align-self: flex-end;
-    color: $color-active;
-    font-weight: bold;
+  .img {
+    background-color: $color-milk;
+    max-width: 70px;
+    max-height: 70px;
+
   }

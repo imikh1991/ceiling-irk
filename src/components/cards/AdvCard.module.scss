@@ -1,0 +1,40 @@
+.element {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: $color-bg;
+    width: 160px; 
+    height: 160px;
+    
+    @media (max-width: 830px) {
+        font-size: 15px;
+      }
+  }
+
+  .description {
+    position: absolute;
+    background-color: $color-milk;
+    border: $color-dark-grey solid 2px;
+    color: $color-black;
+    width: 352px;
+    height: max-content;
+    padding: 10px;
+    border-radius: 10px;
+    filter: drop-shadow(0 0 0.15rem rgb(45, 45, 45));
+  }
+
+  .link {
+    display: flex; 
+    gap: 8px; 
+    cursor: pointer; 
+    color: blue;
+    opacity: 0.9; 
+    transition-duration: 300ms; 
+    transition-timing-function: ease-in-out;
+  } 
+
+  .link:hover {
+    color: #6d8601;
+  }

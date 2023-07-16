@@ -1,0 +1,32 @@
+.element {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: $color-bg;
+    align-items: center;
+    z-index: 999;
+    font-size: 35px;
+    line-height: normal;
+    min-height: 260px;
+    
+    @media (max-width: 830px) {
+      font-size: 25px;
+    }
+    
+    @media (max-width: 555px) {
+      padding: 45px 0px 20px;
+      font-size: 22px;
+      gap: 10px;
+    }
+  }
+  
+  .title {
+    font-size: inherit;
+    text-align: center;
+    color: $color-black;
+  }
+  
+  .phone {
+    color: $color-green;
+
+  }

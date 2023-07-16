@@ -1,0 +1,53 @@
+.element {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    background-color: $color-black;
+    z-index: 999;
+    margin: 40px 0px 0px 0px;
+    padding: 30px 0px 0px 0px;
+    font-size: 30px;
+    line-height: normal;
+    height: 270px;
+    width: 270px;
+    opacity: 90%;
+    border-radius: 50%;
+    
+  
+    @media (max-width: 830px) {
+      font-size: 20px;
+    }
+    
+    @media (max-width: 555px) {
+      padding: 45px 0px 20px;
+      font-size: 20px;
+      gap: 10px;
+    }
+  }
+
+  .group {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .title {
+   
+    font-size: inherit;
+    text-align: center;
+    color: $color-milk;
+  }
+  
+  .phone {
+    
+    color: $color-yellow;
+  }
+
+  .text {
+   
+    text-align: center;
+    color: $color-milk;
+  }

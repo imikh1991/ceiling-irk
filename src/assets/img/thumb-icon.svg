@@ -1,0 +1,50 @@
+<svg width="72" height="57" viewBox="0 0 72 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="72" height="57" fill="#F2F2F2"/>
+<g id="Artboard" clip-path="url(#clip0_0_1)">
+<rect width="2000" height="3100" transform="translate(-590 -1404)" fill="white"/>
+<g id="back" clip-path="url(#clip1_0_1)">
+<rect id="back_2" x="-590" y="-1404" width="2000" height="3100" fill="#282828"/>
+<g id="Layer 51" filter="url(#filter0_d_0_1)">
+<rect x="-190" y="-1404" width="1200" height="3100" fill="#3C3C3C"/>
+</g>
+</g>
+<g id="body" clip-path="url(#clip2_0_1)">
+<g id="&#208;&#159;&#208;&#190;&#209;&#135;&#208;&#181;&#208;&#188;&#209;&#131; &#208;&#188;&#209;&#139;?" clip-path="url(#clip3_0_1)">
+<rect id="Layer 53" x="-190" y="-164" width="1200" height="1100" fill="#EBEDEE"/>
+<path id="Ellipse 6" fill-rule="evenodd" clip-rule="evenodd" d="M33.9998 -25C78.1826 -25 114 10.8173 114 54.9998C114 99.1826 78.1826 135 33.9998 135C-10.1829 135 -46.0002 99.1826 -46.0002 54.9998C-46.0002 10.8173 -10.1829 -25 33.9998 -25Z" fill="white"/>
+<g id="Thumb up" clip-path="url(#clip4_0_1)">
+<path id="shirt" fill-rule="evenodd" clip-rule="evenodd" d="M24 54.9999H17.0181C7.6193 54.9999 2.4e-05 47.3887 2.4e-05 37.9999C2.4e-05 28.6112 7.6193 20.9999 17.0181 20.9999H24V54.9999Z" fill="#854D37"/>
+<path id="shirt_2" fill-rule="evenodd" clip-rule="evenodd" d="M22 18.9999H34V56.9999H22V18.9999Z" fill="#C24C28"/>
+<path id="button" fill-rule="evenodd" clip-rule="evenodd" d="M27.9999 44.9999C29.6568 44.9999 30.9999 46.343 30.9999 47.9999C30.9999 49.6568 29.6568 50.9999 27.9999 50.9999C26.343 50.9999 25 49.6568 25 47.9999C25 46.343 26.343 44.9999 27.9999 44.9999Z" fill="white"/>
+<path id="hand" fill-rule="evenodd" clip-rule="evenodd" d="M67.9999 28.9999C67.9999 28.9999 70.9999 29.9999 70.9999 32.9999C70.9999 35.9999 67 37.9999 67 37.9999C67 37.9999 68.9999 38.8019 68.9999 41.9999C69.0002 45.198 63.9999 45.9999 63.9999 45.9999C63.9999 45.9999 66.9998 46.9999 67 49.9999C67 52.9999 62.2285 53.9999 62.2285 53.9999H34V21H39C45.5143 21 45.9999 11 45.9999 11C45.9999 11 45.9999 5.00386 45.9999 3.99994C45.9999 1.99994 47.0001 -1.0004 51 0.999972C55 2.99997 55 6.73591 55 11C54.9997 14.198 53.9999 21 53.9999 21C53.9999 21 63.6571 21 67.9999 21C70 21 71.9999 21.9999 71.9999 24.9999C71.9999 27.9999 67.9999 28.9999 67.9999 28.9999Z" fill="#F1CDB0"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_d_0_1" x="-205" y="-1419" width="1230" height="3130" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset/>
+<feGaussianBlur stdDeviation="7.5"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.00392157 0 0 0 0.75 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
+</filter>
+<clipPath id="clip0_0_1">
+<rect width="2000" height="3100" fill="white" transform="translate(-590 -1404)"/>
+</clipPath>
+<clipPath id="clip1_0_1">
+<rect width="2000" height="3130" fill="white" transform="translate(-590 -1419)"/>
+</clipPath>
+<clipPath id="clip2_0_1">
+<rect width="1200" height="2160" fill="white" transform="translate(-190 -504)"/>
+</clipPath>
+<clipPath id="clip3_0_1">
+<rect width="1200" height="1100" fill="white" transform="translate(-190 -164)"/>
+</clipPath>
+<clipPath id="clip4_0_1">
+<rect width="72" height="57" fill="white"/>
+</clipPath>
+</defs>
+</svg>
