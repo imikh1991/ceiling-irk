@@ -37,7 +37,7 @@ async function startServer() {
         const address = req.body.address;
         const phone = req.body.phone;
         const mail = {
-            to: 'mr.mihoho@gmail.com',
+            to: 'admin@1ps.ru',
             subject: '♥♥♥ Contact Form Submission',
             html: `New Order from web-site 
                  <p>Phone: ${phone}</p>

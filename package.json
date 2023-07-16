@@ -12,6 +12,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@rumess/react-flip-countdown": "^1.2.6",
     "body-parser": "^1.20.2",
     "circletype": "^2.3.0",
     "cors": "^2.8.5",
